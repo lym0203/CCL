@@ -1,1 +1,1 @@
-# CCL
+# Cloud Computing Lecture
