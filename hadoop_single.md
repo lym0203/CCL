@@ -1,42 +1,34 @@
 
-yum -y update
-
-yum install wget
-
-systemctl stop firewalld
+    yum -y update
+    yum install wget
+    systemctl stop firewalld
 
 
-0. 기존 java 삭제하기
+    [기존 java 삭제하기]
 
-yum -y remove "java-*"
-
-
-1. jdk 다운로드
-
-cd ~/Downloads
-
-wget —no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
+    yum -y remove "java-*"
 
 
-cd ~/Downloads/
+    1. jdk 다운로드
 
-tar –zxvf jdk-8u5-linux-x64.tar.gz
+    cd ~/Downloads
 
-mkdir /usr/java
+    wget —no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
-mv jdk1.8.0_60 /usr/java/jdk1.8
+    cd ~/Downloads/
+    tar –zxvf jdk-8u5-linux-x64.tar.gz
+    mkdir /usr/java
+    mv jdk1.8.0_60 /usr/java/jdk1.8
 
-vi /etc/profile
+    vi /etc/profile
 
-밑에 추가
+    밑에 추가
 
-export JAVA_HOME=/usr/java/jdk1.8
+    export JAVA_HOME=/usr/java/jdk1.8
+    export PATH=$JAVA_HOME/bin:$PATH
+    export CLASSPATH=$CLASSPATH:$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar
 
-export PATH=$JAVA_HOME/bin:$PATH
-
-export CLASSPATH=$CLASSPATH:$JAVA_HOME/jre/lib/ext:$JAVA_HOME/lib/tools.jar
-
-source /etc/profile
+    source /etc/profile
 
 2. 계정 추가
 
