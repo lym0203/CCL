@@ -1,6 +1,8 @@
 
 yum -y update
+
 yum install wget
+
 systemctl stop firewalld
 
 
@@ -9,6 +11,7 @@ yum -y remove "java-*"
 
 
 1. jdk 다운로드
+cd ~/Downloads
 
 wget —no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
