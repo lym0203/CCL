@@ -1,5 +1,8 @@
 # Cloud Computing Lecture
 
+## CentOS Download
+http://125.7.128.52:8001/wordpress/pub/inhatc/
+
 ## AWS 참고
 http://blog.saltfactory.net/aws/create-instance-on-aws.html
 
