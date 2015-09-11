@@ -6,13 +6,22 @@ https://desktop.github.com/
 
 sudo apt-get install git   
 
-(centos : sudo yum install git)
+----
+
+su
+yum install git
+
+----
 
 mkdir ~/workspace
 
 cd ~/workspace
 
+git status
+
 git init
+
+git status
 
 git config --global user.name [유저이름]
 
@@ -24,7 +33,11 @@ git pull -u origin master     # 파일 다운로드
 
 git add [생성한파일]
 
+git status
+
 git commit -m "메세지"
+
+git status
 
 git push -u origin master     # 파일 업데이트
 
