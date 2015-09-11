@@ -4,15 +4,21 @@ https://desktop.github.com/
 
 ----
 
+## Ubuntu git 설치
+
 sudo apt-get install git   
 
 ----
+
+## CentOS git 설치
 
 su
 
 yum install git
 
 ----
+
+## git 사용법
 
 mkdir ~/workspace
 
