@@ -9,6 +9,7 @@ sudo apt-get install git
 ----
 
 su
+
 yum install git
 
 ----
