@@ -4,7 +4,7 @@ https://desktop.github.com/
 
 ----
 
-sudo apt-get install git
+sudo apt-get install git   ##(centos : sudo yum install git)
 
 mkdir ~/workspace
 
@@ -18,13 +18,13 @@ git config --global user.email [이메일주소]
 
 git remote add origin https://github.com/kowonsik/raspberry.git
 
-git pull -u origin master   # 파일 다운로드
+git pull -u origin master     ## 파일 다운로드
 
 git add [생성한파일]
 
 git commit -m "메세지"
 
-git push -u origin master   # 파일 업데이트
+git push -u origin master     ## 파일 업데이트
 
 
 -----
