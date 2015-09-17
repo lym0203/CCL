@@ -2,7 +2,9 @@
 
 ```sh
 
-vi /etc/yum.repos.d/google.repo 파일을 생성하고 다음 내용 추가
+# vi /etc/yum.repos.d/google.repo 
+
+다음 내용 추가
 
 [google64]
 name=google-chrome - 64-bit
