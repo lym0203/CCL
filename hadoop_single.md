@@ -20,7 +20,7 @@
     cd ~/Downloads/
     tar –zxvf jdk-8u5-linux-x64.tar.gz
     mkdir /usr/java
-    mv jdk1.8.0_60 /usr/java/jdk1.8
+    mv jdk1.8.0_05 /usr/java/jdk1.8
 
     vi /etc/profile
 
