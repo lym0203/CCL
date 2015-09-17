@@ -10,11 +10,13 @@ baseurl=http://dl.google.com/linux/rpm/stable/x86_64
 enabled=1
 gpgcheck=1
 gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
-yum으로 Google Chrome 안정판 설치
+
 ```
 
 ```sh
+yum으로 Google Chrome 안정판 설치
 # yum install google-chrome-stable
+
 다음과 같은 에러가 발생하여 설치가 중단된다.
 
 Error: Package: google-chrome-stable-30.0.1599.114-1.x86_64 (google64)
