@@ -1,3 +1,9 @@
+```sh
+    yum -y update
+    yum install wget
+    systemctl stop firewalld
+```
+
 [ yum을 이용하여 Chrome 브라우저 설치 ]
 
 ```sh
@@ -36,10 +42,6 @@ Richard Lloyd가 만든 설치 스크립트를 이용하여 다시 설치
 [Hadoop 설치하기]]
 
 ```sh
-    yum -y update
-    yum install wget
-    systemctl stop firewalld
-
 
     [기존 java 삭제하기]
 
