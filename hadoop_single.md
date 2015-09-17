@@ -88,7 +88,7 @@ arch명령어를 통해 비트수 확인 후 설치
     6. 속성값 추가하기 : <configuration> </configuration> 사이에
 
 ```sh
-    vi /home/hadoop/hadoop-2.7.1/etc/hadoop/core-site.xml
+    vi $HADOOP_HOME/etc/hadoop/core-site.xml
 
     <property>
         <name>fs.default.name</name>
@@ -99,7 +99,7 @@ arch명령어를 통해 비트수 확인 후 설치
 -------------------------------------------------
 
 ```sh
-    vi /home/hadoop/hadoop-2.7.1/etc/hadoop/hdfs-site.xml
+    vi $HADOOP_HOME/etc/hadoop/hdfs-site.xml
 
     <property>
         <name>dfs.replication</name>
@@ -121,7 +121,7 @@ arch명령어를 통해 비트수 확인 후 설치
 
 ```sh
 
-    cp /home/hadoop/hadoop-2.7.1/etc/hadoop/mapred-site.xml.template $HADOOP_HOME/etc/hadoop/mapred-site.xml
+    cp $HADOOP_HOME/etc/hadoop/mapred-site.xml.template $HADOOP_HOME/etc/hadoop/mapred-site.xml
     
 ```
 -------------------------------------------------
@@ -139,7 +139,7 @@ arch명령어를 통해 비트수 확인 후 설치
 -------------------------------------------------
 
 ```sh
-    vi /home/hadoop/hadoop-2.7.1/etc/hadoop/yarn-site.xml
+    vi $HADOOP_HOME/etc/hadoop/yarn-site.xml
 
     <property>
         <name>yarn.nodemanager.aux-services</name>
@@ -156,7 +156,7 @@ arch명령어를 통해 비트수 확인 후 설치
 -------------------------------------------------
 
 ```sh
-    vi /home/hadoop/hadoop-2.7.1/etc/hadoop/hadoop-env.sh 
+    vi $HADOOP_HOME/etc/hadoop/hadoop-env.sh 
     export JAVA_HOME=/usr/java/jdk1.8
 ```
 
