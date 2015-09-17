@@ -21,6 +21,7 @@ yum으로 Google Chrome 안정판 설치
 
 Error: Package: google-chrome-stable-30.0.1599.114-1.x86_64 (google64)
        Requires: libstdc++.so.6(GLIBCXX_3.4.15)(64bit)
+       
 Richard Lloyd가 만든 설치 스크립트를 이용하여 다시 설치
 
 # wget http://chrome.richardlloyd.org.uk/install_chrome.sh
