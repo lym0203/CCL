@@ -210,6 +210,7 @@ arch명령어를 통해 비트수 확인 후 설치
 
 ```sh    
     localhost:50070
+    localhost:50090
 ```
     9. put a file ~
 
