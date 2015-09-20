@@ -1,10 +1,11 @@
 ```sh
     yum -y update
-    yum install wget
-    systemctl stop firewalld
+    yum install wget  # wget 설치가 되어있지 않은 경우에 실행
+    systemctl stop firewalld  # 방화벽 해제가 필요한 경우에 실행
 ```
 
-[ yum을 이용하여 Chrome 브라우저 설치 ]
+----
+[ yum을 이용하여 Chrome 브라우저 설치 ] # 웹브라우저 설치가 필요한 경우에 실행
 
 ```sh
 
@@ -37,13 +38,13 @@ Richard Lloyd가 만든 설치 스크립트를 이용하여 다시 설치
 # ./install_chrome.sh
 
 ```
+----
 
-
-[Hadoop 설치하기]]
+## Hadoop 설치하기]
 
 ```sh
 
-    [기존 java 삭제하기]
+    [기존 java 삭제하기] # centos 경우에는 자바 설치가 되어 있지 않으므로 따로 실행할필요 없음
 
     yum -y remove "java-*"
 ```
