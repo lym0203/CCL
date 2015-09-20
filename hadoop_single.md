@@ -40,11 +40,11 @@ Richard Lloyd가 만든 설치 스크립트를 이용하여 다시 설치
 ```
 ----
 
-## Hadoop 설치하기]
+## Hadoop 설치하기
 
 ```sh
 
-    [기존 java 삭제하기] # centos 경우에는 자바 설치가 되어 있지 않으므로 따로 실행할필요 없음
+    [기존 java 삭제하기] # centos 경우에는 자바 설치가 되어 있지 않으므로 따로 실행할 필요 없음
 
     yum -y remove "java-*"
 ```
@@ -58,9 +58,10 @@ arch명령어를 통해 비트수 확인 후 설치
 ```sh
     cd ~/Downloads
 
+   (64비트인 경우)
     wget —no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz
 
-    (32비트인경우)
+    (32비트인 경우)
     wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u60-b27/jdk-8u60-linux-i586.tar.gz"
     
 
