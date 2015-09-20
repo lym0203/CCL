@@ -33,9 +33,9 @@ yum install google-chrome-stable
 #       
 # Richard Lloyd가 만든 설치 스크립트를 이용하여 다시 설치
 
- wget http://chrome.richardlloyd.org.uk/install_chrome.sh
- chmod u+x install_chrome.sh
- ./install_chrome.sh
+wget http://chrome.richardlloyd.org.uk/install_chrome.sh
+chmod u+x install_chrome.sh
+./install_chrome.sh
 
 ```
 ----
@@ -44,9 +44,10 @@ yum install google-chrome-stable
 
 ```sh
 
-    [기존 java 삭제하기] # centos 경우에는 자바 설치가 되어 있지 않으므로 따로 실행할 필요 없음
+[기존 java 삭제하기] # centos 경우에는 자바 설치가 되어 있지 않으므로 따로 실행할 필요 없음
 
-    yum -y remove "java-*"
+yum -y remove "java-*"
+
 ```
 
     1. jdk 다운로드
