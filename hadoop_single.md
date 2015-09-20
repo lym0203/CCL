@@ -126,36 +126,52 @@ arch명령어를 통해 비트수 확인 후 설치
     $source $HOME/.bashrc
 ```
 
-    6. 속성값 추가하기 : <configuration> </configuration> 사이에
+    6. 설정값 추가하기
+
+-------------------------------------------------
 
 ```sh
-    vi $HADOOP_HOME/etc/hadoop/core-site.xml
+    # (하둡을 구동하는 스크립트에서 사용되는 환경 변수)
+    vi $HADOOP_HOME/etc/hadoop/hadoop-env.sh 
+    export JAVA_HOME=/usr/java/jdk1.8
+```
 
-    <property>
-        <name>fs.default.name</name>
-        <value>hdfs://localhost:9000</value>
-    </property>
+------------------------------------------
+
+```sh
+    # (HDFS와 맵리듀스에 공통적으로 사용되는 IO 설정같은 하둡코어를 위한 환경설정 구성)
+    vi $HADOOP_HOME/etc/hadoop/core-site.xml
+    
+    <configuration> 
+        <property>
+            <name>fs.default.name</name>
+            <value>hdfs://localhost:9000</value>
+        </property>
+    </configuration> 
 ```
 
 -------------------------------------------------
 
 ```sh
+    # (네임노드, 보조 네임노드, 데이터노드 등과 같은 HDFS 데몬을 위한 환경 설정 구성)
     vi $HADOOP_HOME/etc/hadoop/hdfs-site.xml
-
-    <property>
-        <name>dfs.replication</name>
-        <value>1</value>
-    </property>
+    
+    <configuration> 
+        <property>
+            <name>dfs.replication</name>
+            <value>1</value>
+        </property>
  
-    <property>
-        <name>dfs.name.dir</name>
-        <value>file:///home/hadoop/hadoopdata/hdfs/namenode</value>
-    </property>
+        <property>
+            <name>dfs.name.dir</name>
+            <value>file:///home/hadoop/hadoopdata/hdfs/namenode</value>
+        </property>
  
-    <property>
-        <name>dfs.data.dir</name>
-        <value>file:///home/hadoop/hadoopdata/hdfs/datanode</value>
-    </property>
+        <property>
+            <name>dfs.data.dir</name>
+            <value>file:///home/hadoop/hadoopdata/hdfs/datanode</value>
+        </property>
+    </configuration>         
 ```
 
 -------------------------------------------------
@@ -168,13 +184,15 @@ arch명령어를 통해 비트수 확인 후 설치
 -------------------------------------------------
 
 ```sh
-
+    # (잡트래커와 테스크트래커와 같은 맵리듀스 데몬을 위한 환경 설정 구성)
     vi  $HADOOP_HOME/etc/hadoop/mapred-site.xml
-
-    <property>
-        <name>mapreduce.framework.name</name>
-        <value>yarn</value>
-    </property>
+    
+    <configuration> 
+        <property>
+            <name>mapreduce.framework.name</name>
+            <value>yarn</value>
+        </property>
+    </configuration> 
 ```
 
 -------------------------------------------------
@@ -194,14 +212,7 @@ arch명령어를 통해 비트수 확인 후 설치
     set JAVA_HOME
 ```
 
--------------------------------------------------
 
-```sh
-    vi $HADOOP_HOME/etc/hadoop/hadoop-env.sh 
-    export JAVA_HOME=/usr/java/jdk1.8
-```
-
-------------------------------------------
     7. 하둡시작
     
 ```sh
