@@ -109,6 +109,9 @@ arch명령어를 통해 비트수 확인 후 설치
     4. 하둡다운로드
     
 ```sh
+    cd /home
+    mkdir hadoop
+    cd hadoop
     wget http://apache.tt.co.kr/hadoop/common/hadoop-2.7.1/hadoop-2.7.1.tar.gz
     tar -zxvf hadoop-2.7.1.tar.gz
 ```
