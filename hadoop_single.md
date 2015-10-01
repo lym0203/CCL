@@ -234,8 +234,9 @@ arch명령어를 통해 비트수 확인 후 설치
     8. Web GUI 확인
 
 ```sh    
-    localhost:50070  # NameNode 정보 제공
-    localhost:50090  # Hadoop 대략적인 상태 정보를 제공
+    localhost:50070  # NameNode 정보 확인
+    localhost:50090  # Secondary NameNode 정보 확인
+    localhost:8088   # 클러스터와 모든 어플리케이션 정보 확인
 ```
     9. word counting example
 
