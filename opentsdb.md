@@ -61,11 +61,12 @@ master running as process (process number). Stop it first
 ```
 ※When " hbase.sh " run, If this is notification because the setting of the 'java_home JDK' is not successful,
   Run a " profile " again ($ source /etc/profile)
-  ### GnuPlot Install
-  ```sh
+
+### GnuPlot Install
+```sh
 $ cd /usr/local
 $ apt-get install gcc
-$　apt-get install libgd2-xpm-dev
+$ apt-get install libgd2-xpm-dev
 $ wget http://sourceforge.net/projects/gnuplot/files/gnuplot/4.6.3/gnuplot-4.6.3.tar.gz
 $ tar zxvf gnuplot-4.6.3.tar.gz
 $ cd gnuplot-4.6.3
