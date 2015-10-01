@@ -137,10 +137,9 @@ arch명령어를 통해 비트수 확인 후 설치
 
     6. 설정값 추가하기
 
-- ![connection](https://github.com/kowonsik/CCL/blob/master/lecture/hadoop.png)
-- ![connection](https://github.com/kowonsik/CCL/blob/master/lecture/name_data_node.png)
+![connection](https://github.com/kowonsik/CCL/blob/master/lecture/hadoop.png)
+![connection](https://github.com/kowonsik/CCL/blob/master/lecture/name_data_node.png)
 
--------------------------------------------------
 
 ```sh
     # (하둡을 구동하는 스크립트에서 사용되는 환경 변수)
