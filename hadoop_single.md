@@ -234,8 +234,8 @@ arch명령어를 통해 비트수 확인 후 설치
     8. Web GUI 확인
 
 ```sh    
-    localhost:50070
-    localhost:50090
+    localhost:50070  # NameNode 정보 제공
+    localhost:50090  # Hadoop 대략적인 상태 정보를 제공
 ```
     9. word counting example
 
@@ -257,6 +257,10 @@ arch명령어를 통해 비트수 확인 후 설치
     
     # Word Count 실행
     hadoop jar wc.jar WordCount /input /output
+    
+    # 기본 파일 명령어
+    hadoop fs -ls /   # 모든 디렉토리 확인
+    hadoop fs -ls /output   # output 디렉토리 확인
     
     # 결과 확인
     hdfs dfs -cat /output/part-r-00000
