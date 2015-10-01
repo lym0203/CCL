@@ -237,10 +237,28 @@ arch명령어를 통해 비트수 확인 후 설치
     localhost:50070
     localhost:50090
 ```
-    9. put a file ~
+    9. word counting example
 
-```sh    
-    $ hdfs dfs -mkdir /user
-    $ hdfs dfs -mkdir /user/hadoop
-    $ hdfs dfs -put /var/log/boot.log
+```sh
+    # 테스트 문서 제작
+    vim test.txt   # 문장을 작성해서 넣어주면 됨(테스트용 문서를 옮겨놓고 사용해도 됨)
+    
+    hdfs dfs -mkdir /user/hadoop/input   # input 디렉토리를 만듬
+    hdfs dfs -put test.txt /user/hadoop/input   # test.txt 파일을 input 디렉토리에 넣음
+    
+    # Word Count java 코드 작성( github 에서 WordCount.java 파일 다운로드)
+    wget https://raw.githubusercontent.com/kowonsik/CCL/master/WordCount.java
+    
+    # WordCount.java compile
+    hadoop com.sun.tools.javac.Main WordCount.java
+    
+    # jar 파일 만들기
+    jar -cf wc.jar WordCount*.class
+    
+    # Word Count 실행
+    hadoop jar wc.jar WordCount /input /output
+    
+    # 결과 확인
+    hdfs dfs -cat /output/part-r-00000
+    
 ```
